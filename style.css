@@ -1,0 +1,166 @@
+body {
+    font-family: 'Arial', sans-serif; /* Fonte mais moderna e profissional */
+    margin: 0;
+    line-height: 1.6; /* Espaçamento entre linhas para melhor legibilidade */
+    color:#373229; /* Cor de texto escura */
+    background-color: #c2bace;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #af80b8; /* Cor de fundo neutra */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 960px; /* Largura máxima do container para melhor visualização em telas grandes */
+    margin: 0 auto;
+    padding: 0 20px; /* Espaçamento interno para evitar que o conteúdo encoste nas bordas */
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em coluna no mobile */
+    align-items: center;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 5px solid #fff; /* Adiciona uma borda branca para destacar a foto */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+}
+
+.descricao h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* Estilos do botão de contato */
+.btn-contato {
+    display: inline-block;
+    background-color: #957774;
+    color: #c2bace;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: bold; /* Destaca o texto do botão */
+}
+
+.btn-contato:hover {
+    background-color: #c2bace;
+    color:#957774 ;
+}
+
+/* Estilos das seções */
+section {
+    padding: 40px 0;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* Estilos da seção "Sobre" */
+#sobre p {
+    text-align: center;
+    max-width: 700px; /* Limita a largura do parágrafo para melhor legibilidade */
+    margin: 0 auto;
+}
+
+/* Estilos da seção "Projetos" */
+.container-projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajusta o número de colunas automaticamente */
+    gap: 30px;
+}
+
+.projeto {
+    background-color: #af80b8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+    text-align: center; /* Centraliza o conteúdo dentro do projeto */
+}
+
+.projeto img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.projeto h3 {
+    margin-bottom: 5px;
+}
+
+/* Estilos da seção "Contato" */
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.btn-whatsapp {
+    display: inline-block;
+    background-color: #25D366; /* Cor verde do WhatsApp */
+    color: white;
+   align-items: center;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    cursor: pointer; /* Adiciona o cursor de mãozinha */
+}
+
+.btn-whatsapp:hover {
+    background-color: #1DA851; /* Cor mais escura ao passar o mouse */
+}
+
+.btn-whatsapp i {
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-media a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+@media (min-width: 768px) { /* Estilos para telas maiores ou iguais a 768px (tablets e desktops) */
+    .container {
+        flex-direction: row; /* Organiza em linha em telas maiores */
+        justify-content: space-around;
+    }
+
+    header img {
+        margin-bottom: 0;
+    }
+
+    #sobre p {
+        text-align: left; /* Alinha o texto à esquerda em telas maiores */
+    }
+
+    .projeto {
+        text-align: center; /* Alinha o texto à esquerda em telas maiores */
+    }
+    .projeto img {
+        width: 100%; /* Ocupa toda a largura do container */
+        height: auto; /* Ajusta a altura automaticamente para manter a proporção da imagem */
+        display: block; /* Remove espaços em branco abaixo da imagem */
+    }
+}
